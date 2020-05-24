@@ -1,0 +1,18 @@
+<html>
+    <head>
+    
+    </head>
+    <body>
+        <%- include('partials/nav'); %>
+            
+        <h1>title</h1>
+        <h2><%= person %></h2>
+        <h2><%= data.age %></h2>
+        <h2><%= data.job %></h2>
+        <% data.hobbies.forEach(function(item) { %>
+            <p><%= item %></p>
+            
+       <% }); %>
+        
+    </body>
+</html>
